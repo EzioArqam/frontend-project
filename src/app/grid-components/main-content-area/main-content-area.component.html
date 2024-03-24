@@ -1,0 +1,13 @@
+<div class="grid-wrapper">
+    <app-user-input (gridGenerationInvoked)="onGridGenerationInvoked($event)"></app-user-input>
+    @defer(when this.loadGrid == true){
+    <app-grid [gridNumbers]="this.gridNumbers"></app-grid>
+    }
+    @placeholder{
+    <div class="container">
+        <div class="dotted-border">
+            Please write a Total Sum to render the Grid
+        </div>
+    </div>
+    }
+</div>

@@ -1,0 +1,133 @@
+/* You can add global styles to this file, and also import other style files */
+
+.mat-mdc-raised-button .mat-mdc-button-touch-target {
+    background-color: rgb(252, 232, 11);
+}
+
+.error-snackbar {
+    background-color: #ff424c;
+    /* Light red background */
+    color: #fff;
+}
+
+.info-snackbar {
+    background-color: #00843b;
+    /* Light blue background */
+    color: #fff;
+}
+
+.mat-mdc-snack-bar-container {
+    &.error-snackbar {
+        --mdc-snackbar-container-color: #ff424c;
+        text-align: center;
+    }
+
+    &.info-snackbar {
+        --mdc-snackbar-container-color: #00843b;
+        text-align: center;
+    }
+}
+
+.mat-mdc-snack-bar-container {
+    .mdc-snackbar__surface {
+        background: transparent !important;
+        box-shadow: none;
+        padding: 0;
+
+        .custom-snackbar {
+            padding: 10px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+
+            &.error-snackbar {
+                --mdc-snackbar-container-color: #ff424c;
+                text-align: center;
+            }
+
+            &.info-snackbar {
+                --mdc-snackbar-container-color: #00843b;
+                text-align: center;
+            }
+        }
+
+        .mat-mdc-snack-bar-label {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.mat-mdc-form-field {
+    width: 100%;
+
+    .mat-mdc-text-field-wrapper {
+        padding: 0;
+        background: transparent;
+
+        .mdc-line-ripple {
+            display: none;
+        }
+
+        .mat-mdc-form-field-flex {
+            .mat-mdc-form-field-infix {
+                .mdc-text-field__input {
+                    text-align: right;
+                }
+
+                padding: 5px 16px;
+                height: auto;
+                width: auto;
+                background-color: #fff;
+                min-height: auto;
+                border: 1px solid #68718b;
+                border-radius: 4px;
+
+                .mat-mdc-form-field-input-control {
+                    color: inherit;
+                }
+            }
+
+            .mat-mdc-form-field-icon-suffix {
+                padding: 0;
+
+                .mdc-icon-button {
+                    width: auto;
+                    height: auto;
+                    padding: 3px;
+                    margin-left: -32px;
+                    border-radius: 4px;
+                    transition: 0.4s ease all;
+
+                    .mdc-icon-button__ripple {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    .mdc-icon-button {
+                        background: #ccc;
+                    }
+                }
+            }
+        }
+
+        .mat-mdc-form-field-focus-overlay {
+            display: none;
+        }
+    }
+
+    .mat-mdc-form-field-subscript-wrapper {
+        display: none;
+    }
+
+    &.mat-focused {
+        .mat-mdc-text-field-wrapper {
+            .mat-mdc-form-field-flex {
+                .mat-mdc-form-field-infix {
+                    border-color: #184bdb;
+                }
+            }
+        }
+    }
+}

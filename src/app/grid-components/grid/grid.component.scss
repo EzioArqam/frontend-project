@@ -1,0 +1,30 @@
+
+  .grid-div{
+    width: 524px;
+    padding: 24px;
+    background-color: #eeeeee; 
+    margin-top: 8px;
+    border: 2px solid #68718b; 
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+.grid-container {
+    display: grid;
+    background-color: #eeeeee; 
+    grid-template-columns: repeat(4, 100px); 
+    grid-template-rows: repeat(4, 100px); 
+    gap: 24px; 
+  }
+  .grid-item {
+   
+   background-color: rgb(255, 255, 255); 
+    border: 1px solid #68718b; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 24px; 
+    border-radius: 10px;
+    font-size: 15px;
+  }

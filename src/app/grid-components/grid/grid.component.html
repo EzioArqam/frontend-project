@@ -1,0 +1,9 @@
+<div class="grid-div">
+  <div class="grid-container">
+    <!-- Items were not being rendered properly using Angular 17's control flow statement as its still in developer's mode, 
+      hence using classic Iterables -->
+    <div class="grid-item" *ngFor="let item of gridNumbers">
+      {{item}}
+    </div>
+  </div>
+</div>
